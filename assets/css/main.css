@@ -1,0 +1,62 @@
+body{
+  width: 700;
+  margin: auto;
+}
+
+body, h1, h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.container{
+  margin-top: 100px;
+}
+
+h1{
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+h2{
+  margin-top: 10px;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+li a{
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+  background-size: 64px 64px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  text-indent: -9999em;
+}
+
+.twitter{
+  background-color: #00ACED;
+  background-image: url('../img/twitter-64.png');
+}
+
+.mail{
+  background-color: #DD4B39;
+  background-image: url('../img/email-64.png');
+}
+
+.github{
+  background-color: #4183C4;
+  background-image: url('../img/github-64.png');
+}
+
+.linkedin{
+  background-color: #007FB1;
+  background-image: url('../img/linkedin-64.png');
+}
