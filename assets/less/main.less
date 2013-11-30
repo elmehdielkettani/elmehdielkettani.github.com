@@ -1,0 +1,130 @@
+body{
+	width: 60%;
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+h1, h2 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p{
+	line-height: 25px;
+}
+
+.container{
+	margin-top: 50px;
+}
+
+/* Top Section */
+#top {
+	h1{
+		font-size: 46px;
+		line-height: 43px;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+
+	h2{
+		font-size: 20px;
+		margin-top: 10px;
+		font-weight: 400;
+	}
+
+	ul{
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			display: inline-block;
+		}
+
+		li a{
+			display: inline-block;
+			height: 64px;
+			width: 64px;
+			background-size: 64px 64px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin: 5px;
+			text-indent: -9999em;
+		}
+	}
+
+	.twitter{
+		background-color: #00ACED;
+		background-image: url('../img/twitter-64.png');
+	}
+
+	.mail{
+		background-color: #DD4B39;
+		background-image: url('../img/email-64.png');
+	}
+
+	.github{
+		background-color: #4183C4;
+		background-image: url('../img/github-64.png');
+	}
+
+	.linkedin{
+		background-color: #007FB1;
+		background-image: url('../img/linkedin-64.png');
+	}
+}
+
+/* Stocky menu */
+nav{
+	width: 100%;
+
+	background-color: #f7f7f7;
+
+	ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: inline-block;
+			padding: 5px;
+			width: 30%;
+			font-size: 20px;
+			text-align: center;
+
+			&.selected{
+				background-color: #f7f7f7;
+			}
+		}
+	}
+}
+
+section{
+	h2 {
+		padding-bottom: 15px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #eee;
+	}
+}
+
+/* Job Section */
+.job section{
+	margin-bottom: 50px;
+	min-height: 150px;
+
+	img.main {
+		float: left;
+		margin-right: 15px;
+		background-color: #f7f7f7;
+	}
+
+	ul{
+		list-style: none;
+		padding-left: 0;
+		margin-left: 165px;
+	}
+
+	p{
+		margin-left: 165px;
+	}
+}
+
