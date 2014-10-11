@@ -1,35 +1,78 @@
 body{
-	width: 60%;
 	margin: auto;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 }
 
-h1, h2 {
+h1, h2, h3 {
+	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
-p{
+p {
 	line-height: 25px;
 }
 
-.container{
-	margin-top: 50px;
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+	    color: #d25f4f;
+	}
 }
 
-/* Top Section */
-#top {
-	h1{
-		font-size: 46px;
-		line-height: 43px;
-		font-weight: 400;
-		margin-bottom: 10px;
+.slide {
+	background-color: #ffffff;
+	width: 100%;
+
+	.content {
+		padding: 30px 100px 0 100px;
 	}
 
-	h2{
-		font-size: 20px;
-		margin-top: 10px;
-		font-weight: 400;
+	h2, h3 {
+		color: black;
+		text-align: center;
+	}
+}
+
+.home {
+	background-color: #141414;
+	background-size: 100% auto;
+	height: 100%;
+	min-height: 400px;
+
+	.content {
+		width: 70%;
+		position: relative;
+		top: 30%;
+		left: 15%;
+		overflow: hidden;
+		max-width: 900px;
+		padding: 0px;
+		text-align: center;
+
+		.circle {
+			border-radius: 50%;
+			width: 250px;
+			height: 250px;
+			background-color: red;
+		}
+	}
+
+	h1 {
+		font-size: 100px;
+		color: #d25f4f;
+		margin-bottom: 5px;
+		font-family: 'Oswald', sans-serif;
+		text-transform: uppercase;
+	}
+
+	h2, h3 {
+		color: white;
+		font-family: 'Oswald', sans-serif;
+		font-size: 30px;
+		color: #fff;
 	}
 
 	ul{
@@ -41,76 +84,45 @@ p{
 		}
 
 		li a{
-			display: inline-block;
-			height: 64px;
-			width: 64px;
-			background-size: 64px 64px;
-			background-position: center center;
-			background-repeat: no-repeat;
-			margin: 5px;
-			text-indent: -9999em;
+			text-decoration: none;
 		}
 	}
 
 	.twitter{
-		background-color: #00ACED;
+		background-color: #000000;
 		background-image: url('../img/twitter-64.png');
 	}
 
 	.mail{
-		background-color: #DD4B39;
+		background-color: #000000;
 		background-image: url('../img/email-64.png');
 	}
 
 	.github{
-		background-color: #4183C4;
+		background-color: #000000;
 		background-image: url('../img/github-64.png');
 	}
 
 	.linkedin{
-		background-color: #007FB1;
+		background-color: #000000;
 		background-image: url('../img/linkedin-64.png');
 	}
 }
 
-/* Stocky menu */
-nav{
-	width: 100%;
-
-	background-color: #f7f7f7;
-
-	ul{
-		list-style: none;
-		padding: 0;
-		margin: 0;
-
-		li {
-			display: inline-block;
-			padding: 5px;
-			width: 30%;
-			font-size: 20px;
-			text-align: center;
-
-			&.selected{
-				background-color: #f7f7f7;
-			}
-		}
-	}
+.job {
+	// background-color: #e6e6e6;
 }
 
-section{
-	h2 {
-		padding-bottom: 15px;
-		margin-bottom: 20px;
-		border-bottom: 1px solid #eee;
-	}
+.education {
+	// background-color: #e6e6e6;
+}
+
+.passions {
+	// background-color: #e6e6e6;
 }
 
 /* Job Section */
 .job section{
-	margin-bottom: 50px;
-	min-height: 150px;
-
 	img.main {
 		float: left;
 		margin-right: 15px;
@@ -127,4 +139,3 @@ section{
 		margin-left: 165px;
 	}
 }
-

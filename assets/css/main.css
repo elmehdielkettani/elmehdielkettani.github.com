@@ -1,94 +1,99 @@
 body {
-  width: 60%;
   margin: auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 h1,
-h2 {
+h2,
+h3 {
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 p {
   line-height: 25px;
 }
-.container {
-  margin-top: 50px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-/* Top Section */
-#top h1 {
-  font-size: 46px;
-  line-height: 43px;
-  font-weight: 400;
-  margin-bottom: 10px;
+a:hover {
+  color: #d25f4f;
 }
-#top h2 {
-  font-size: 20px;
-  margin-top: 10px;
-  font-weight: 400;
+.slide {
+  background-color: #ffffff;
+  width: 100%;
 }
-#top ul {
+.slide .content {
+  padding: 30px 100px 0 100px;
+}
+.slide h2,
+.slide h3 {
+  color: black;
+  text-align: center;
+}
+.home {
+  background-color: #141414;
+  background-size: 100% auto;
+  height: 100%;
+  min-height: 400px;
+}
+.home .content {
+  width: 70%;
+  position: relative;
+  top: 30%;
+  left: 15%;
+  overflow: hidden;
+  max-width: 900px;
+  padding: 0px;
+  text-align: center;
+}
+.home .content .circle {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  background-color: red;
+}
+.home h1 {
+  font-size: 100px;
+  color: #d25f4f;
+  margin-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+.home h2,
+.home h3 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+.home ul {
   list-style: none;
   padding-left: 0;
 }
-#top ul li {
+.home ul li {
   display: inline-block;
 }
-#top ul li a {
-  display: inline-block;
-  height: 64px;
-  width: 64px;
-  background-size: 64px 64px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin: 5px;
-  text-indent: -9999em;
+.home ul li a {
+  text-decoration: none;
 }
-#top .twitter {
-  background-color: #00ACED;
+.home .twitter {
+  background-color: #000000;
   background-image: url('../img/twitter-64.png');
 }
-#top .mail {
-  background-color: #DD4B39;
+.home .mail {
+  background-color: #000000;
   background-image: url('../img/email-64.png');
 }
-#top .github {
-  background-color: #4183C4;
+.home .github {
+  background-color: #000000;
   background-image: url('../img/github-64.png');
 }
-#top .linkedin {
-  background-color: #007FB1;
+.home .linkedin {
+  background-color: #000000;
   background-image: url('../img/linkedin-64.png');
 }
-/* Stocky menu */
-nav {
-  width: 100%;
-  background-color: #f7f7f7;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-nav ul li {
-  display: inline-block;
-  padding: 5px;
-  width: 30%;
-  font-size: 20px;
-  text-align: center;
-}
-nav ul li.selected {
-  background-color: #f7f7f7;
-}
-section h2 {
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
 /* Job Section */
-.job section {
-  margin-bottom: 50px;
-  min-height: 150px;
-}
 .job section img.main {
   float: left;
   margin-right: 15px;

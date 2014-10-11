@@ -7,6 +7,7 @@ module.exports = function(grunt) {
 
 		less: {
 			dev: {
+				cleancss: true,
 				files: {
 					'<%= config.assetsDir %>/css/main.css' : '<%= config.assetsDir %>/less/main.less'
 				}
