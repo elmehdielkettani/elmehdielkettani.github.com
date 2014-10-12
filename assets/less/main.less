@@ -1,16 +1,20 @@
+@link-color: #d25f4f;
+@header-background-color: #141414;
+
 body{
 	margin: auto;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Quattrocento', sans-serif;
 	font-size: 16px;
 }
 
 h1, h2, h3 {
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 p {
-	line-height: 25px;
+	line-height: 30px;
+	font-size: 20px;
 }
 
 a {
@@ -18,8 +22,14 @@ a {
 	color: inherit;
 
 	&:hover {
-	    color: #d25f4f;
+		color: @link-color;
 	}
+}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
 }
 
 .slide {
@@ -36,11 +46,34 @@ a {
 	}
 }
 
-.home {
-	background-color: #141414;
+nav {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: @header-background-color;
+
+	li {
+		display: inline-block;
+
+		a {
+			padding: 5px;
+			width: 70px;
+			margin: 0 30px;
+		}
+	}
+}
+
+header {
+	background-color: @header-background-color;
 	background-size: 100% auto;
 	height: 100%;
 	min-height: 400px;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
 
 	.content {
 		width: 70%;
@@ -72,70 +105,35 @@ a {
 		color: white;
 		font-family: 'Oswald', sans-serif;
 		font-size: 30px;
-		color: #fff;
 	}
 
-	ul{
-		list-style: none;
-		padding-left: 0;
+	ul.links > li{
+		color: @header-background-color;
+		display: inline-block;
+		margin: 16px 0;
+	}
+}
 
-		li {
+section {
+	padding: 50px 300px;
+
+	.big-circle-links {
+		text-align: center;
+
+
+		.netlight {
 			display: inline-block;
+			width: 150px;
+			height: 150px;
+			background: url('../img/netlight.png') no-repeat;
+			border: 2px solid grey;
+			border-radius: 50%;
+
+			&:hover {
+				border-color: @link-color;
+			}
 		}
-
-		li a{
-			text-decoration: none;
-		}
 	}
 
-	.twitter{
-		background-color: #000000;
-		background-image: url('../img/twitter-64.png');
-	}
 
-	.mail{
-		background-color: #000000;
-		background-image: url('../img/email-64.png');
-	}
-
-	.github{
-		background-color: #000000;
-		background-image: url('../img/github-64.png');
-	}
-
-	.linkedin{
-		background-color: #000000;
-		background-image: url('../img/linkedin-64.png');
-	}
-}
-
-.job {
-	// background-color: #e6e6e6;
-}
-
-.education {
-	// background-color: #e6e6e6;
-}
-
-.passions {
-	// background-color: #e6e6e6;
-}
-
-/* Job Section */
-.job section{
-	img.main {
-		float: left;
-		margin-right: 15px;
-		background-color: #f7f7f7;
-	}
-
-	ul{
-		list-style: none;
-		padding-left: 0;
-		margin-left: 165px;
-	}
-
-	p{
-		margin-left: 165px;
-	}
 }
